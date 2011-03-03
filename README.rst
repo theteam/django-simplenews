@@ -19,6 +19,3 @@ simplenews/object_list.html
 Requirements
 - Qmanager http://github.com/zacharyvoase/django-qmanager
 - django_extensions http://github.com/django-extensions/django-extensions
-
-TODO:
-Add requirements file
