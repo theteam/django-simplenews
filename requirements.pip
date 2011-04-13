@@ -1,2 +1,0 @@
--e git+http://github.com/django-extensions/django-extensions.git#egg=django-extensions
--e git+http://github.com/zacharyvoase/django-qmanager.git#egg=django-qmanager
