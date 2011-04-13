@@ -1,9 +1,6 @@
-========================
 Django reusable news app
-=======================
 
 Usage
-_____
 
 Add the url files to the mount point, it requres ``simplenews`` as a namespace
 <pre>
@@ -19,16 +16,16 @@ simplenews/shortlist.html
 </pre>
 
 
-Requirements
+Requirements:
+
 - Qmanager http://github.com/zacharyvoase/django-qmanager
 - django_extensions http://github.com/django-extensions/django-extensions
 
 
-Testing
-_______
-
+Testing the app:
 
 <pre>
 $ python bootstrap.py
 $ ./bin/buildout
+$ ./bin/test
 </pre>

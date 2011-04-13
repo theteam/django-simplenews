@@ -1,0 +1,1 @@
+from simplenews.tests.tests import SimpleNewsTest
