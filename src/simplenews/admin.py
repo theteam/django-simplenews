@@ -1,9 +1,13 @@
 from django.contrib import admin
 
-from simplenews.models import Article
+from simplenews.models import Article, ArticleImage
+
+
+class ArticleImageInline(admin.StackedInline):
+    model = ArticleImage
 
 class ArticleAdmin(admin.ModelAdmin):
     """Admin for the Articles"""
-    pass
+    inlines = [ArticleImageInline, ]
 
 admin.site.register(Article, ArticleAdmin)
