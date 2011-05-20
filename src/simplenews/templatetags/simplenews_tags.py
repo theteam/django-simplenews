@@ -15,7 +15,7 @@ def render_latest_news(context, template='simplenews/shortlist.html'):
     {% render_latest_news with "simplenews/shortlist.html" %}
     """
     request = context.get('request')
-    object_list = Article.live.all().order_by('-created')[:5]
+    object_list = Article.live.all().order_by('-is_featured','-created')[:5]
     extra_context = {'object_list': object_list}
     template_context = RequestContext(request, extra_context)
     return render_to_string(template, template_context)
