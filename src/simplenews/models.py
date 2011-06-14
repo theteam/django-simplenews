@@ -89,7 +89,7 @@ class ArticleImage(models.Model):
     PORTRAIT = 2
     ORIENTATION_CHOICES = ((LANDSCAPE, _('landscape')),
                            (PORTRAIT, _('portrait')))
-    image = models.ImageField(upload_to="news", blank=True)
+    image = models.ImageField(upload_to="news")
     title = models.CharField(blank=True, max_length=255)
     article = models.ForeignKey('simplenews.Article')
     position = models.IntegerField(choices=POSITION_CHOICES)
